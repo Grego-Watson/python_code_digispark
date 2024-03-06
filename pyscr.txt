@@ -1,0 +1,11 @@
+import subprocess
+
+def open_chrome():
+    try:
+        subprocess.Popen(['chrome.exe'])
+        print("Chrome opened successfully.")
+    except FileNotFoundError:
+        print("Chrome executable not found.")
+
+if __name__ == "__main__":
+    open_chrome()
